@@ -1,0 +1,8 @@
+SELECT alumnos.dni,alumnos.fecha_nacimiento,travesuras.codigo,
+       travesuras.fecha,travesuras.descripcion,niveles_delictivos.descripcion
+FROM alumnos
+LEFT JOIN travesuras
+ON alumnos.dni = travesuras.dni_alumno
+LEFT JOIN niveles_delictivos
+ON travesuras.nivel_delictivo = niveles_delictivos.codigo
+where travesuras.nivel_delictivo > 3;

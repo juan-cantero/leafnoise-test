@@ -1,0 +1,8 @@
+
+Tanto las clases abstractas como las interfaces sirven para programar hacia la abstracción,
+pero las clases abstractas ademas se usan para agregar comportamiento que puede ser reutilizado
+usando herencia mientras las interfaces son solo un contrato de lo que puede o no puede hacer mi clase.
+Usaria una interfaz por ejemplo para definir mi clase repositorio, de esa manera no importa que base
+de datos use, el contrato seria siempre el mismo. Y utilizaria una clase abstracta por ejemplo para definir
+un Empleado donde haya que calcular el cuil por ejemplo que siempre se hace de la misma forma y asi no tengo
+que volver a escribir el codigo en cada subclase.
